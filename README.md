@@ -10,33 +10,39 @@ The Password Analyzer is a comprehensive tool designed to evaluate and enhance p
 - Manage saved passwords (view, lookup, delete).
 
 ## Installation
-1. **Create a Database Instance:**
+1. **Clone the Repository:**
+   - Clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/yourusername/password-analyzer.git
+     cd password-analyzer
+     ```
+
+2. **Create a Database Instance:**
    - Set up a database instance either locally or on the cloud.
 
-2. **Run the SQL Script:**
+3. **Run the SQL Script:**
    - Execute the `database_creation_script.sql` file to create the necessary tables in the database.
 
-3. **Update the Connection String:**
+4. **Update the Connection String:**
    - Open `analyzer.py` and update the `connection_string` variable with your database credentials.
 
-4. **Install Dependencies:**
+5. **Install Dependencies:**
    - Install the required Python packages:
      ```bash
      pip install pyodbc bcrypt cryptography
      ```
 
-5. **Generate the Key File:**
+6. **Generate the Key File:**
    - Run the `key_generator.py` script to generate an encryption key:
      ```bash
      python key_generator.py
      ```
 
-6. **Run the Analyzer:**
+7. **Run the Analyzer:**
    - Execute `analyzer.py` to start the application:
      ```bash
      python analyzer.py
      ```
-
 ## Usage
 - Launch the application and follow the on-screen prompts to:
   1. Log in or sign up as a user.
